@@ -1,0 +1,28 @@
+# Uncomment the next line to define a global platform for your project
+# CMD: pod update --verbose --no-repo-update
+
+platform :ios, '10.0'
+
+source 'https://github.com/CocoaPods/Specs.git'
+
+def rx_pods
+  pod 'RxSwift', '~> 5'
+  pod 'RxCocoa', '~> 5'
+  pod 'RxDataSources', '~> 4'
+end
+
+target 'MyArchitecture' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Rx
+  rx_pods
+  # Networking
+  pod 'Moya'
+  # AutoLayout
+  pod 'SnapKit'
+  # Lint
+  pod 'SwiftLint'
+  #pod 'MBProgressHUD'
+
+end

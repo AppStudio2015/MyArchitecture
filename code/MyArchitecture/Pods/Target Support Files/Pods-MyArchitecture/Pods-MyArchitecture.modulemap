@@ -1,0 +1,6 @@
+framework module Pods_MyArchitecture {
+  umbrella header "Pods-MyArchitecture-umbrella.h"
+
+  export *
+  module * { export * }
+}
